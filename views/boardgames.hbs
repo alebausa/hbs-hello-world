@@ -1,0 +1,9 @@
+<h2>Browse all my boardgames!</h2>
+
+<div class="card-container">
+  {{#each boardGames}}
+  {{>card this}}
+  {{else}}
+  <p>No board games so far.</p>
+  {{/each}}
+</div>

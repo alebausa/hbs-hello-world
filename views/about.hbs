@@ -1,0 +1,14 @@
+<h1>My name is {{ name }} and I'm {{ age }}</h1>
+  {{#if boardGames}}
+  <p>I have more than {{ boardGames }} boardgames at home!</p>
+  {{else}}
+  <p>I don't have boardgames</p>
+  {{/if}}
+
+  <ul>
+    {{#each siblings}}
+    <li>{{this}}</li>
+    {{else}}
+    <li>No siblings</li>
+    {{/each}}
+  </ul>
